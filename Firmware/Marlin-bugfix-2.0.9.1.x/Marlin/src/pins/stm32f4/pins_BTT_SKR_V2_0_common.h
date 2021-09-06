@@ -23,6 +23,14 @@
 
 #include "env_validate.h"
 
+// LASER CONFIG
+#ifndef SPINDLE_LASER_ENA_PIN
+  #define SPINDLE_LASER_ENA_PIN               PE5
+#endif
+#ifndef SPINDLE_LASER_PWM_PIN
+  #define SPINDLE_LASER_PWM_PIN               PB2
+#endif
+
 // If you have the BigTreeTech driver expansion module, enable BTT_MOTOR_EXPANSION
 // https://github.com/bigtreetech/BTT-Expansion-module/tree/master/BTT%20EXP-MOT
 //#define BTT_MOTOR_EXPANSION
